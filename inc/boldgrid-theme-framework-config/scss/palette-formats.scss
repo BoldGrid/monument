@@ -1,0 +1,290 @@
+/*------------------------------------------------------------------------
+# Variables
+------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Palettes
+------------------------------------------------------------------------*/
+.palette-primary {
+
+	/*-----------------------------------------------
+	## 1
+	-----------------------------------------------*/
+	.home .entry-footer a {
+		color: $palette-primary_1;
+	}
+
+	/* Nav Toggle */
+	.navbar-default .navbar-toggle {
+		border-color: $palette-primary_1;
+	}
+	.navbar-default .navbar-toggle .icon-bar,
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+		background: $palette-primary_1;
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar {
+		background: $text-contrast-palette-primary_1;
+	}
+	.dropdown-menu {
+		background: $palette-primary_1;
+	}
+	/* Dropdown Parent */
+	.navbar-default .navbar-nav > .open > a, 
+	.navbar-default .navbar-nav > .open > a:hover, 
+	.navbar-default .navbar-nav > .open > a:focus,
+	.navbar-default .navbar-nav > .current-menu-parent > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+	.dropdown-menu > li > a  {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+
+	/*-----------------------------------------------
+	## 2
+	-----------------------------------------------*/
+	.background-alpha,
+	.background-delta,
+	.mod-alpha {
+		background: $palette-primary_2;
+	}
+	.mod-alpha h2 {
+		background: $palette-primary_2;
+		border-bottom: 5px solid $palette-primary_1;
+		color: $text-contrast-palette-primary_2;
+	}
+	.background-alpha h2,
+	.background-delta h2, 
+	.mod-alpha h2,
+	.mod-alpha p,
+	.mod-delta p, {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	.link-secondary {
+		color: $palette-primary_2;
+	}
+
+	/*-----------------------------------------------
+	## 3
+	-----------------------------------------------*/
+	.background-gamma h2,
+	.sidebar,
+	.site-footer,
+	.site-title,
+	.site-description,
+	#secondary-menu a,
+	#menu-social a,
+	#menu-social li a,
+	.site-footer p, 
+	.site-info, 
+	.attribution,
+	mark, 
+	ins {
+		background: $palette-primary_3;
+		color: $text-contrast-palette-primary_3;
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: $text-contrast-palette-primary_3;
+	}
+	.site-title a {
+		color: $text-contrast-palette-primary_3;
+		border-bottom: 5px solid $palette-primary_4;
+	}
+	.mod-delta-bg,
+	.background-gamma {
+		background: $palette-primary_3;
+	}
+	a.comment-reply-link,
+	caption,
+	.widget-title {
+		color: $palette-primary_3;
+	}
+
+	/* Dropdown Child Default */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: $text-contrast-palette-primary_1;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+	.table-striped > tbody > tr:nth-child(2n+1) {
+		background: $palette-primary_3;
+		color: $text-contrast-palette-primary_3;
+	}
+
+	/* #payment label,
+	#payment .payment_box p,
+	.woocommerce-message a,
+	.woocommerce-message a:hover,
+	.woocommerce-message a:focus,
+	.black-studio-tinymce-widget p,
+	.payment_method_paypal label a,
+	.payment_method_paypal label a:hover,
+	.payment_method_paypal label a:focus,
+	#secondary .table-striped > tbody > tr:nth-child(2n+1) td,
+	.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+		color: $text-contrast-palette-primary_3;
+	} */
+
+	/*-----------------------------------------------
+	## 4
+	-----------------------------------------------*/
+	a,
+	a:hover,
+	a:focus,
+	.site-footer a,
+	.current_page_item a,
+	#menu-social li a:hover,
+	#menu-social li a:focus,
+	#secondary-menu a[href]:hover,
+	#tertiary-menu a[href]:hover,
+	#secondary-menu .current_page_item a,
+	#tertiary-menu .current_page_item a,
+	#menu-social .current_page_item a {
+		color: $palette-primary_4;
+	}
+	.mod-beta h2 {
+		border-bottom: 5px solid $palette-primary_4;
+	}
+
+	/* Hover & Active */
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus,
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+		background: none;
+		color: $palette-primary_4;
+	}
+	blockquote {
+		border-left: 5px solid $palette-primary_4;
+	}
+
+	/*-----------------------------------------------
+	## 5
+	-----------------------------------------------*/
+	#boldgrid-sticky-filler {
+		background: $palette-primary_5 none repeat scroll 0 0;
+	}
+	.woocommerce-tabs .panel,
+	#tertiary-menu {
+		background: $palette-primary_5;
+		color: $text-contrast-palette-primary_5;
+		/* border-bottom: 2px solid $palette-primary_3; */
+	}
+	#tertiary-menu a,
+	.site-content {
+		background: $palette-primary_5;
+		color: $text-contrast-palette-primary_5;
+	}
+	.product_title,
+	.single .entry-title,
+	.background-beta h2 {
+		background: $palette-primary_5;
+		color: $text-contrast-palette-primary_5 !important;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		color: $text-contrast-palette-primary_5;
+	}
+	.entry-title {
+		border-bottom: 3px solid $text-contrast-palette-primary_5;
+	}
+
+	/* sm */
+	@media (min-width: 768px) {
+		.entry-title {
+			border-bottom: none;
+		}
+	}
+
+	/*-----------------------------------------------
+	## Misc
+	-----------------------------------------------*/
+	.button-primary,
+	.comment-reply-link {
+		border: 2px solid $palette-primary_1;
+		border-radius: 0;
+		color: $text-contrast-palette-primary_5 !important;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+57,a6a6a6+100 */
+		background: $palette-primary_5; /* Old browsers */
+		background: -moz-linear-gradient(top,  $palette-primary_5 0%, $palette-primary_1 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  $palette-primary_5 0%,$palette-primary_1 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  $palette-primary_5 0%,$palette-primary_1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='palette-primary_5 ', endColorstr='$palette-primary_1',GradientType=0 ); /* IE6-9 */
+	}
+	.button-primary:hover,
+	.button-primary:focus,
+	input[type="submit"]:hover,
+	input[type="submit"]:focus,
+	.comment-reply-link:hover,
+	.comment-reply-link:focus {
+		color: $text-contrast-palette-primary_5 !important;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+57,a6a6a6+100 */
+		background: $palette-primary_5; /* Old browsers */
+		background: -moz-linear-gradient(top,  $palette-primary_1  0%, $palette-primary_5 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  $palette-primary_1  0%,$palette-primary_5 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  $palette-primary_1  0%,$palette-primary_5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$palette-primary_1', endColorstr='$palette-primary_5',GradientType=0 ); /* IE6-9 */
+	}
+	.button-secondary,
+	input[type="submit"],
+	#commentsubmit {
+		border: 2px solid $palette-primary_2;
+		border-radius: 0;
+		color: $text-contrast-palette-primary_2 !important;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#767b7f+0,535659+48,232426+100 */
+		background: $palette-primary_2; /* Old browsers */
+		background: -moz-linear-gradient(top,  $palette-primary_2 0%, $palette-primary_3 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  $palette-primary_2 0%,$palette-primary_3 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  $palette-primary_2 0%,$palette-primary_3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$palette-primary_2', endColorstr='$palette-primary_3',GradientType=0 ); /* IE6-9 */
+	}
+	.button-secondary:hover,
+	.button-secondary:focus,
+	#commentsubmit:hover,
+	#commentsubmit:focus {
+		color: $text-contrast-palette-primary_3 !important;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#767b7f+0,535659+48,232426+100 */
+		background: $palette-primary_3; /* Old browsers */
+		background: -moz-linear-gradient(top,  $palette-primary_3 0%, $palette-primary_2 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  $palette-primary_3 0%,$palette-primary_2 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  $palette-primary_3 0%,$palette-primary_2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$palette-primary_3', endColorstr='$palette-primary_2',GradientType=0 ); /* IE6-9 */
+	}
+	&.home .entry-footer {
+		background: $palette-primary_2;
+	}
+	&.home .entry-footer a {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_3;
+	}
+	&.blog .entry-footer a {
+		background: $palette-primary_5;
+		color: $palette-primary_4;
+	}
+	&.mce-content-body {
+		background: $palette-primary_5 !important;
+		color: $text-contrast-palette-primary_5;
+	}
+	&.blog {
+		.site-content,
+		.entry-footer,
+		.entry-footer span {
+				background: $palette-primary_5;
+				color: $text-contrast-palette-primary_5;
+		}
+	}
+	&.blog .entry-title {
+		background: $palette-primary_5;
+		color: $text-contrast-palette-primary_5 !important;
+	}
+}
