@@ -111,14 +111,18 @@
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 		color: $text-contrast-palette-primary_1;
 	}
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
-	.table-striped > tbody > tr:nth-child(2n+1) {
-		background: $palette-primary_3;
-		color: $text-contrast-palette-primary_3;
+
+	/* sm */
+	@media (min-width: 768px) {
+		.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+		.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+		.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+		.table-striped > tbody > tr:nth-child(2n+1) {
+			background: $palette-primary_3;
+			color: $text-contrast-palette-primary_3;
+		}
 	}
 
 	/* #payment label,
@@ -175,6 +179,7 @@
 	#boldgrid-sticky-filler {
 		background: $palette-primary_5 none repeat scroll 0 0;
 	}
+	hr,
 	.woocommerce-tabs .panel,
 	#tertiary-menu {
 		background: $palette-primary_5;
@@ -182,7 +187,8 @@
 		/* border-bottom: 2px solid $palette-primary_3; */
 	}
 	#tertiary-menu a,
-	.site-content {
+	.site-content,
+	.mod-divider a {
 		background: $palette-primary_5;
 		color: $text-contrast-palette-primary_5;
 	}
@@ -192,7 +198,21 @@
 		background: $palette-primary_5;
 		color: $text-contrast-palette-primary_5 !important;
 	}
-	h1, h2, h3, h4, h5, h6 {
+	h1, 
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	h6,
+	body,
+	input, 
+	button, 
+	select, 
+	textarea,
+	.media-heading,
+	.payment_methods label,
+	.comments-area .comment-content p,
+	.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
 		color: $text-contrast-palette-primary_5;
 	}
 	.entry-title {
@@ -203,12 +223,80 @@
 	@media (min-width: 768px) {
 		.entry-title {
 			border-bottom: none;
+			color: #fff;
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+		}
+		/* Dropdown Child Default */
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+			color: $text-contrast-palette-primary_5;
+		}
+		.page-template-default .entry-title {
+			color: #fff;
 		}
 	}
 
 	/*-----------------------------------------------
 	## Misc
 	-----------------------------------------------*/
+	.call-to-action h1 {
+		color: #fff;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	}
+	.title-main {
+		border-bottom: 1px solid #333;
+		color: #333;
+		border-top: 1px solid #333;
+	}
+	.mod-blockquote {
+		border-left: 7px solid #333;
+	}
+	.mod-divider {
+		border-top: 1px solid #333;
+	}
+	.mod-icon-circle i {
+		border: 2px solid #333;
+	}
+	.page-template-default .entry-title {
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #ddd;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+		background-color: #ddd;
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar {
+		background-color: #25374a;
+	}
+	.gridblock .heading-alt {
+		color: #738599;
+	}
+	.widget-area {
+		border: 1px solid #ccc;
+	}
+	.form-submit .submit {
+		background: #ccc;
+		color: #337ab7;
+	}
+	.form-submit .submit:hover,
+	.form-submit .submit:focus {
+		background: #337ab7;
+		color: #ccc;
+	}
+	.woocommerce #respond input#submit, 
+	.woocommerce a.button,
+	.woocommerce button.button, 
+	.woocommerce input.button,
+	.woocommerce p.buttons a.button {
+		background-color: #a46497;
+		color: #fff;
+	}
+	.woocommerce p.buttons a.button:hover {
+		background-color: #dad8da;
+		color: #515151;
+	}
 	.button-primary,
 	.comment-reply-link {
 		border: 2px solid $palette-primary_1;
