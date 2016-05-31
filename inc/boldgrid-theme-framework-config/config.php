@@ -1,12 +1,49 @@
-<?php 
+<?php
 function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
-	/**
-	 * General Configs
-	 */
-	$boldgrid_framework_configs['theme_name'] = 'boldgrid-monument'; // Text domain
+
+	// Text Domain.
+	$boldgrid_framework_configs['theme_name'] = 'boldgrid-monument';
+
+	// Enable Sticky Footer.
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
+
+	// Enable typography controls.
 	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
+
+	// Enable attribution links.
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
+
+	// Enable template wrapper.
+	$boldgrid_framework_configs['boldgrid-parent-theme'] = true;
+
+	// Specify the parent theme's name.
+	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
+
+	// Select the header template to use.
+	$boldgrid_framework_configs['template']['header'] = 'generic';
+
+	// Select the footer template to use.
+	$boldgrid_framework_configs['template']['footer'] = 'generic';
+
+	// Assign Locations for Generic Header.
+	$boldgrid_framework_configs['template']['locations']['header'] = array(
+		'12' => array( '[menu]secondary' ),
+		'1' => array( '[widget]boldgrid-widget-1' ),
+		'6' => array( '[action]boldgrid_site_identity' ),
+		'7' => array( '[menu]tertiary', '[menu]social' ),
+		'8' => array( '[widget]boldgrid-widget-2' ),
+		'11' => array( '[action]boldgrid_primary_navigation' ),
+	);
+
+	// Assign Locations for Generic Footer.
+	$boldgrid_framework_configs['template']['locations']['footer'] = array(
+		'1' => array( '[widget]boldgrid-widget-3' ),
+		'5' => array( '[menu]footer_center' ),
+		'8' => array( '[action]boldgrid_display_attribution_links' ),
+	);
+
+	// This theme doesn't have a Call To Action.
+	$boldgrid_framework_configs['template']['call-to-action'] = 'home-only';
 
 	/**
 	 * Customizer Configs
@@ -22,7 +59,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#18191a',
 				'#ff000a',
 				'#ffffff',
-			) 
+			)
 		),
 		array (
 			'format' => 'palette-primary',
@@ -32,7 +69,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#222222',
 				'#3390af',
 				'#656b62',
-			) 
+			)
 		),
 		array (
 			'format' => 'palette-primary',
@@ -42,7 +79,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#00827d',
 				'#27516d',
 				'#8b7a5e',
-			) 
+			)
 		),
 		array (
 			'format' => 'palette-primary',
@@ -52,7 +89,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#272f49',
 				'#949a8e',
 				'#615566',
-			) 
+			)
 		),
 		array (
 			'format' => 'palette-primary',
@@ -62,7 +99,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#571b3c',
 				'#c15157',
 				'#341931',
-			) 
+			)
 		),
 	);
 
@@ -72,7 +109,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				<h1>Monument</h1>
 					<p class="p-button-primary"><a class="button-primary" href="contact-us">Request a Quote Today</a></p>
 			</div>
-		</div> 
+		</div>
 HTML;
 
 	// Add CTA to Widget 2
@@ -83,7 +120,7 @@ HTML;
 		'filter' => 1,
 		'label' => 'black-studio-tinymce'
 	);
-	
+
 	// Text Contrast Colors
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#333333';
@@ -112,7 +149,7 @@ HTML;
 
 	// Icons
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
-	
+
 	// Menu Locations
 	$boldgrid_framework_configs['menu']['locations']['secondary'] = "Above Site Title";
 	$boldgrid_framework_configs['menu']['locations']['tertiary'] = "Above Content Area";
