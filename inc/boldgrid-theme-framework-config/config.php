@@ -38,6 +38,12 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// This theme doesn't have a Call To Action.
 	$boldgrid_framework_configs['template']['call-to-action'] = 'home-only';
 
+	// Set Entry Header to Fluid Width Container.
+	$boldgrid_framework_configs['template']['entry-header'] = 'fluid';
+
+	// Set Entry Footer to Fluid Width Container.
+	$boldgrid_framework_configs['template']['entry-footer'] = 'fluid';
+
 	/**
 	 * Customizer Configs
 	 */
@@ -171,20 +177,19 @@ function filter_logo_controls( $controls ) {
 }
 add_filter( 'kirki/fields', 'filter_logo_controls' );
 
-function boldgrid_container_wrap_top1() {
+function boldgrid_container_wrap_top() {
 	?>
-	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3">
 				<div class="sidebar">
 	<?php
 }
-add_action( 'boldgrid_header_before', 'boldgrid_container_wrap_top1', 30 );
+add_action( 'boldgrid_header_before', 'boldgrid_container_wrap_top', 30 );
 
 function boldgrid_container_wrap_bottom() {
 	?>
-</div>
-</div>
+</div><!-- checkit -->
+	</div><!-- checkit 2 -->
 	<?php
 }
 add_action( 'boldgrid_header_after', 'boldgrid_container_wrap_bottom' );
@@ -198,8 +203,8 @@ add_action( 'boldgrid_content_before', 'boldgrid_body_wrap_top' );
 
 function boldgrid_body_wrap_bottom() {
 	?>
-</div>
-		</div>
+
+</div><!-- end of content wrap -->
 	<?php
 }
-add_action( 'boldgrid_footer_after', 'boldgrid_body_wrap_bottom' );
+add_action( 'boldgrid_footer_before', 'boldgrid_body_wrap_bottom', 5 );
