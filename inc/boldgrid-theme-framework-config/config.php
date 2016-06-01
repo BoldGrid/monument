@@ -1,4 +1,4 @@
-<?php
+ <?php
 function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Text Domain.
@@ -20,20 +20,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
 
 	// Select the header template to use.
-	$boldgrid_framework_configs['template']['header'] = 'generic';
+	$boldgrid_framework_configs['template']['header'] = '2';
 
 	// Select the footer template to use.
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
 	// Assign Locations for Generic Header.
-	$boldgrid_framework_configs['template']['locations']['header'] = array(
-		'12' => array( '[menu]secondary' ),
-		'1' => array( '[widget]boldgrid-widget-1' ),
-		'6' => array( '[action]boldgrid_site_identity' ),
-		'7' => array( '[menu]tertiary', '[menu]social' ),
-		'8' => array( '[widget]boldgrid-widget-2' ),
-		'11' => array( '[action]boldgrid_primary_navigation' ),
-	);
+	$boldgrid_framework_configs['template']['locations']['header'] = '3';
 
 	// Assign Locations for Generic Footer.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
@@ -177,3 +170,36 @@ function filter_logo_controls( $controls ) {
 	return $controls;
 }
 add_filter( 'kirki/fields', 'filter_logo_controls' );
+
+function boldgrid_container_wrap_top1() {
+	?>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="sidebar">
+	<?php
+}
+add_action( 'boldgrid_header_before', 'boldgrid_container_wrap_top1', 30 );
+
+function boldgrid_container_wrap_bottom() {
+	?>
+</div>
+</div>
+	<?php
+}
+add_action( 'boldgrid_header_after', 'boldgrid_container_wrap_bottom' );
+
+function boldgrid_body_wrap_top() {
+	?>
+	<div class="col-md-9 full-width">
+	<?php
+}
+add_action( 'boldgrid_content_before', 'boldgrid_body_wrap_top' );
+
+function boldgrid_body_wrap_bottom() {
+	?>
+</div>
+		</div>
+	<?php
+}
+add_action( 'boldgrid_footer_after', 'boldgrid_body_wrap_bottom' );
