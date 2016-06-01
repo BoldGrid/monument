@@ -31,12 +31,12 @@
 		background: $palette-primary_1;
 	}
 	/* Dropdown Parent */
-	.navbar-default .navbar-nav > .open > a, 
-	.navbar-default .navbar-nav > .open > a:hover, 
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
 	.navbar-default .navbar-nav > .open > a:focus,
 	.navbar-default .navbar-nav > .current-menu-parent > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
@@ -60,7 +60,7 @@
 		color: $text-contrast-palette-primary_2;
 	}
 	.background-alpha h2,
-	.background-delta h2, 
+	.background-delta h2,
 	.mod-alpha h2,
 	.mod-alpha p,
 	.mod-delta p, {
@@ -82,10 +82,10 @@
 	#secondary-menu a,
 	#menu-social a,
 	#menu-social li a,
-	.site-footer p, 
-	.site-info, 
+	.site-footer p,
+	.site-info,
 	.attribution,
-	mark, 
+	mark,
 	ins {
 		background: $palette-primary_3;
 		color: $text-contrast-palette-primary_3;
@@ -114,8 +114,8 @@
 
 	/* sm */
 	@media (min-width: 768px) {
-		.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
-		.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+		.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+		.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 		.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
@@ -187,6 +187,7 @@
 		/* border-bottom: 2px solid $palette-primary_3; */
 	}
 	#tertiary-menu a,
+	.background-beta,
 	.site-content,
 	.mod-divider a {
 		background: $palette-primary_5;
@@ -198,16 +199,16 @@
 		background: $palette-primary_5;
 		color: $text-contrast-palette-primary_5 !important;
 	}
-	h1, 
-	h2, 
-	h3, 
-	h4, 
-	h5, 
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
 	h6,
 	body,
-	input, 
-	button, 
-	select, 
+	input,
+	button,
+	select,
 	textarea,
 	.media-heading,
 	.payment_methods label,
@@ -285,9 +286,9 @@
 		background: #337ab7;
 		color: #ccc;
 	}
-	.woocommerce #respond input#submit, 
+	.woocommerce #respond input#submit,
 	.woocommerce a.button,
-	.woocommerce button.button, 
+	.woocommerce button.button,
 	.woocommerce input.button,
 	.woocommerce p.buttons a.button {
 		background-color: #a46497;

@@ -106,7 +106,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 HTML;
 
 	// Add CTA to Widget 2
-	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-2'][] = array (
+	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array (
 		'title' => 'Call To Action',
 		'text' => $widget_markup['call-to-action'],
 		'type' => 'visual',
