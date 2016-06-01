@@ -744,15 +744,11 @@ li.menu-social {
 }
 .mod-blockquote p {
 	padding-left: 15px;
-}
+}header
 
 /*-----------------------------------------------
 ## Alpha
 -----------------------------------------------*/
-.background-alpha {
-	margin-left: -15px;
-	margin-right: -15px;
-}
 .mod-alpha {
 	/* Flex */
 	display: flex;
@@ -781,7 +777,10 @@ li.menu-social {
 		padding-left: 32%;
 	}
 }
-
+.background-alpha {
+	margin-left: -15px;
+	margin-right: -15px;
+}
 /*-----------------------------------------------
 ## Beta
 -----------------------------------------------*/
@@ -993,7 +992,7 @@ li.menu-social {
 }
 
 /** Sticky Footer **/
-html, body, .site, .site-content {
+html, body, .site, .site-content, .site-header {
 	height: 100%;
 }
 #boldgrid-sticky-wrap {
