@@ -177,6 +177,11 @@ function filter_logo_controls( $controls ) {
 }
 add_filter( 'kirki/fields', 'filter_logo_controls' );
 
+/**
+ * Opens the wrap container.
+ *
+ * @since 1.0.0
+ */
 function boldgrid_container_wrap_top() {
 	?>
 <div class="container-fluid">
@@ -187,14 +192,24 @@ function boldgrid_container_wrap_top() {
 }
 add_action( 'boldgrid_header_before', 'boldgrid_container_wrap_top', 30 );
 
-function boldgrid_container_wrap_bottom() {
+/**
+ * Closes the left sidebar.
+ *
+ * @since 1.0.0
+ */
+function boldgrid_sidebar_close() {
 	?>
 			</div>
 		</div>
 	<?php
 }
-add_action( 'boldgrid_header_after', 'boldgrid_container_wrap_bottom' );
+add_action( 'boldgrid_header_after', 'boldgrid_sidebar_close' );
 
+/**
+ * Opens the content col-md-9.
+ *
+ * @since 1.0.0
+ */
 function boldgrid_body_wrap_top() {
 	?>
 		<div class="col-md-9 full-width">
@@ -202,17 +217,27 @@ function boldgrid_body_wrap_top() {
 }
 add_action( 'boldgrid_content_before', 'boldgrid_body_wrap_top' );
 
-function boldgrid_body_wrap_top2() {
+/**
+ * Closes the content col-md-9.
+ *
+ * @since 1.0.0
+ */
+function boldgrid_body_wrap_bottom() {
 	?>
 		</div>
 	<?php
 }
-add_action( 'boldgrid_content_after', 'boldgrid_body_wrap_top2' );
+add_action( 'boldgrid_content_after', 'boldgrid_body_wrap_bottom' );
 
-function boldgrid_body_wrap_bottom() {
+/**
+ * Closes the wrap container.
+ *
+ * @since 1.0.0
+ */
+function boldgrid_container_wrap_bottom() {
 	?>
 	</div>
 </div><!-- end of content wrap -->
 	<?php
 }
-add_action( 'boldgrid_footer_before', 'boldgrid_body_wrap_bottom', 30 );
+add_action( 'boldgrid_footer_before', 'boldgrid_container_wrap_bottom', 30 );
