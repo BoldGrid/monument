@@ -179,32 +179,40 @@ add_filter( 'kirki/fields', 'filter_logo_controls' );
 
 function boldgrid_container_wrap_top() {
 	?>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="sidebar">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="sidebar">
 	<?php
 }
 add_action( 'boldgrid_header_before', 'boldgrid_container_wrap_top', 30 );
 
 function boldgrid_container_wrap_bottom() {
 	?>
-</div><!-- checkit -->
-	</div><!-- checkit 2 -->
+			</div>
+		</div>
 	<?php
 }
 add_action( 'boldgrid_header_after', 'boldgrid_container_wrap_bottom' );
 
 function boldgrid_body_wrap_top() {
 	?>
-	<div class="col-md-9 full-width">
+		<div class="col-md-9 full-width">
 	<?php
 }
 add_action( 'boldgrid_content_before', 'boldgrid_body_wrap_top' );
 
+function boldgrid_body_wrap_top2() {
+	?>
+		</div>
+	<?php
+}
+add_action( 'boldgrid_content_after', 'boldgrid_body_wrap_top2' );
+
 function boldgrid_body_wrap_bottom() {
 	?>
-
+	</div>
 </div><!-- end of content wrap -->
 	<?php
 }
-add_action( 'boldgrid_footer_before', 'boldgrid_body_wrap_bottom', 5 );
+add_action( 'boldgrid_footer_before', 'boldgrid_body_wrap_bottom', 30 );
