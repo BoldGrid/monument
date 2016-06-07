@@ -169,7 +169,8 @@
 		background: none;
 		color: $palette-primary_4;
 	}
-	blockquote {
+	blockquote,
+	.mod-blockquote {
 		border-left: 5px solid $palette-primary_4;
 	}
 
@@ -179,12 +180,13 @@
 	#boldgrid-sticky-filler {
 		background: $palette-primary_5 none repeat scroll 0 0;
 	}
-	hr,
 	.woocommerce-tabs .panel,
 	#tertiary-menu {
 		background: $palette-primary_5;
 		color: $text-contrast-palette-primary_5;
-		/* border-bottom: 2px solid $palette-primary_3; */
+	}
+	hr {
+		color: $text-contrast-palette-primary_5;
 	}
 	#tertiary-menu a,
 	.site-content,
@@ -246,9 +248,6 @@
 		border-bottom: 1px solid #333;
 		color: #333;
 		border-top: 1px solid #333;
-	}
-	.mod-blockquote {
-		border-left: 7px solid #333;
 	}
 	.mod-divider {
 		border-top: 1px solid #333;

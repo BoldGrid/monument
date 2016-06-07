@@ -90,15 +90,13 @@ HTML;
 
 	// Typography Headings
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Cinzel';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 20;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'none';
 
 	// Typography Alternate Headings
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Serif';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
-
-	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 alt-font';
 
 	// Typography Navigation
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Cinzel';
@@ -108,7 +106,32 @@ HTML;
 	// Typography Body
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Serif';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 140;
+
+	// Typography Tagline Classes
+	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 alt-font';
+
+	// Typography Relationships
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action h1' ]= array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 6.45, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2, .mod-beta h2' ]= array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 3.75, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta-2 h3' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.3, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha p' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.2, 
+	);
 
 	// Icons
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
@@ -134,7 +157,8 @@ function filter_logo_controls( $controls ) {
 	$controls['logo_font_family']['default'] = 'Cinzel';
 	$controls['logo_font_size']['default'] = 32;
 	$controls['logo_margin_top']['default'] = 5;
-	$controls['logo_text_transform']['default'] = 'none';
+	$controls['logo_text_decoration']['default'] = 'none';
+	$controls['logo_text_decoration_hover']['default'] = 'none';
 
 	// Controls above will override framework defaults
 	return $controls;
