@@ -111,42 +111,65 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		</div>
 HTML;
 
-	// Add CTA to Widget 2
+	// Add CTA to Widget 2.
 	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array (
 		'title' => 'Call To Action',
 		'text' => $widget_markup['call-to-action'],
 		'type' => 'visual',
 		'filter' => 1,
-		'label' => 'black-studio-tinymce'
+		'label' => 'black-studio-tinymce',
 	);
 
-	// Text Contrast Colors
+	// Text Contrast Colors.
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#333333';
 
-	// Typography Headings
+	// Typography Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Cinzel';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 20;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'none';
 
-	// Typography Alternate Headings
+	// Typography Alternate Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Serif';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
 
-	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 alt-font';
-
-	// Typography Navigation
+	// Typography Navigation.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Cinzel';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_size'] = 16;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
 
-	// Typography Body
+	// Typography Body.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Serif';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 140;
 
-	// Icons
+	// Typography Tagline Classes.
+	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 alt-font';
+
+	// Typography Relationships.
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action h1'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 6.45,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2, .mod-beta h2'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 3.75,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta-2 h3'] = array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.3,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha p'] = array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.2,
+	);
+
+	// Icons.
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
 
 	// Menu Locations
