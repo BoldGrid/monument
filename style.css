@@ -267,10 +267,7 @@ input[type="submit"],
 }
 
 /* # Footer */
-.site-footer {
-	text-align: center;
-}
-.site-footer p,
+.site-footer,
 .site-info,
 .attribution {
 	text-align: center;
