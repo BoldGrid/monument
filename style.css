@@ -175,7 +175,12 @@ input[type="submit"]:focus,
 .site-footer,
 .site-info,
 .attribution,
-.footer-center-items {
+.footer-center-items,
+.xs-center,
+.mod-img,
+.mod-img-circle,
+.p-button-primary,
+.p-button-secondary {
 	text-align: center;
 }
 .mod-alpha h2,
@@ -187,15 +192,6 @@ input[type="submit"]:focus,
 #menu-social li a,
 .footer-center-menu {
 	text-align: right;
-}
-
-/* xs */
-.xs-center,
-.mod-img,
-.mod-img-circle,
-.p-button-primary,
-.p-button-secondary {
-	text-align: center;
 }
 
 /* sm */
@@ -268,10 +264,7 @@ input[type="submit"]:focus,
 ## Buttons
 -----------------------------------------------*/
 .button-primary,
-.comment-reply-link {
-	margin-top: 25px;
-	padding: 10px 40px;
-}
+.comment-reply-link,
 .button-secondary,
 input[type="submit"],
 #commentsubmit {
@@ -354,7 +347,6 @@ hr {
 	background-color: none;
 	border: none;
 	min-height: 0;
-	/* Border Radius */
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
@@ -372,7 +364,6 @@ hr {
 .navbar-default .navbar-nav > li > a {
 	display: inline-block;
 	padding: 10px;
-	/* Transition */
 	transition: all 0.5s ease;
 }
 .navbar-default .navbar-nav > li:first-child > a {
@@ -434,9 +425,7 @@ hr {
 ## Other Menus
 -----------------------------------------------*/
 #secondary-menu a,
-#menu-social a {
-	padding: 0 8px;
-}
+#menu-social a,
 #tertiary-menu a {
 	padding: 0 8px;
 }
@@ -448,9 +437,6 @@ hr {
 #tertiary-menu {
 	background: none;
 }
-.boldgrid-framework-menu li::after {
-	content: none;
-}
 .footer-center-items li::after, .boldgrid-framework-menu li::after {
 	content: "";
 }
@@ -458,7 +444,8 @@ hr {
 /*-----------------------------------------------
 ## Social Menus
 -----------------------------------------------*/
-#menu-social-media > li > a {
+#menu-social-media > li > a,
+li.menu-social > a {
 	padding: 0 8px;
 }
 .menu-social {
@@ -467,9 +454,6 @@ hr {
 }
 .menu-social ul {
 	padding-left: 0;
-}
-li.menu-social > a {
-	padding: 0 8px;
 }
 li.menu-social {
 	display: inline;
@@ -644,11 +628,9 @@ blockquote p,
 	margin: 0 auto;
 	overflow: hidden;
 	width: 200px;
-	/* Transform */
 	transform-origin: 50% 50%;
 }
 .mod-delta-1 {
-	/* Transform */
 	-ms-transform: rotate(45deg) translateY(10px); /* IE 9 */
 	-webkit-transform: rotate(45deg) translateY(10px); /* Chrome, Safari, Opera */
 	transform: rotate(45deg) translateY(10px);
@@ -656,7 +638,6 @@ blockquote p,
 .mod-delta-1 .mod-delta-2 {
 	height: 355px;
 	width: 355px;
-	/* Transform */
 	-ms-transform: rotate(-45deg) translateY(-74px); /* IE 9 */
 	-webkit-transform: rotate(-45deg) translateY(-74px); /* Chrome, Safari, Opera */
 	transform: rotate(-45deg) translateY(-74px);
