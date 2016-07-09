@@ -26,8 +26,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Main Menu
 	## Other Menus
 	## Social Menus
-# GridBLocks
-	## Positioning
 # Modules
 	## Universal
 	## Global
@@ -480,26 +478,6 @@ li.menu-social {
 	#menu-social-media {
 		margin-left: 6px;
 	}
-}
-
-/*------------------------------------------------------------------------
-# GridBlocks
-------------------------------------------------------------------------*/
-
-/*-----------------------------------------------
-## Positioning
------------------------------------------------*/
-.gridblock h1,
-.gridblock h2,
-.gridblock h3,
-.gridblock h4,
-.gridblock h5,
-.gridblock h6,
-.gridblock ol,
-.gridblock ul,
-.gridblock li,
-.gridblock p {
-	margin: 10px 0;
 }
 
 /*------------------------------------------------------------------------
