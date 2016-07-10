@@ -741,16 +741,6 @@ blockquote p,
 	margin-bottom: 0;
 }
 
-/** Sticky Footer **/
-html, body, .site, .site-content {
-	height: 100%;
-}
-#boldgrid-sticky-wrap {
-	height: 100%;
-	height: auto !important;
-	min-height: 100%;
-}
-
 /* md */
 @media (min-width: 992px) {
 	.site-footer {
