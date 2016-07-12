@@ -172,16 +172,16 @@ HTML;
 	// Icons.
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
 
-	// Menu Locations
-	$boldgrid_framework_configs['menu']['locations']['secondary'] = "Above Site Title";
-	$boldgrid_framework_configs['menu']['locations']['tertiary'] = "Above Content Area";
-	$boldgrid_framework_configs['menu']['locations']['social'] = "Below Primary Menu";
+	// Menu Locations.
+	$boldgrid_framework_configs['menu']['locations']['secondary'] = 'Above Site Title';
+	$boldgrid_framework_configs['menu']['locations']['tertiary'] = 'Above Content Area';
+	$boldgrid_framework_configs['menu']['locations']['social'] = 'Below Primary Menu';
 
-	// Name Widget Areas
+	// Name Widget Areas.
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Above Site Title';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Above Content Area';
 
-	// Configs above will override framework defaults
+	// Configs above will override framework defaults.
 	return $boldgrid_framework_configs;
 }
 add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config' );
@@ -195,7 +195,7 @@ function filter_logo_controls( $controls ) {
 	$controls['logo_margin_top']['default'] = 5;
 	$controls['logo_text_transform']['default'] = 'none';
 
-	// Controls above will override framework defaults
+	// Controls above will override framework defaults.
 	return $controls;
 }
 add_filter( 'kirki/fields', 'filter_logo_controls' );
