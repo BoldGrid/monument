@@ -195,7 +195,7 @@ add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config'
 /**
  * Site Title & Logo Controls
  */
-function filter_logo_controls( $controls ) {
+function boldgrid_filter_logo_controls( $controls ) {
 	$controls['logo_font_family']['default'] = 'Cinzel';
 	$controls['logo_font_size']['default'] = 32;
 	$controls['logo_margin_top']['default'] = 5;
@@ -204,7 +204,7 @@ function filter_logo_controls( $controls ) {
 	// Controls above will override framework defaults.
 	return $controls;
 }
-add_filter( 'kirki/fields', 'filter_logo_controls' );
+add_filter( 'kirki/fields', 'boldgrid_filter_logo_controls' );
 
 /**
  * Opens the wrap container.
