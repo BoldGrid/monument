@@ -16,6 +16,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 >>> TABLE OF CONTENTS:
 --------------------------------------------------------------------------
 # Base Styles
+	## Background
 	## Positioning
 	## Typography
 	## Titles
@@ -43,6 +44,13 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*------------------------------------------------------------------------
 # Base Styles
 ------------------------------------------------------------------------*/
+
+body.page-template-home .site-content {
+	background-color: transparent;
+}
+.full-width {
+	padding: 0;
+}
 
 /*-----------------------------------------------
 ## Positioning
@@ -280,7 +288,7 @@ input[type="submit"],
 }
 
 /* Call to Action */
-.call-to-action-margin {
+.call-to-action {
 	margin-top: 15%;
 	margin-bottom: 25%;
 }
@@ -541,7 +549,8 @@ blockquote p,
 ## Beta
 -----------------------------------------------*/
 .background-beta {
-	padding: 15px;
+	margin-left: -15px;
+	margin-right: -15px;
 }
 .mod-beta {
 	margin-bottom: 50px;
