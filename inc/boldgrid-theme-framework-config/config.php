@@ -32,7 +32,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['template']['pages']['page_home.php']['container_class'] = 'container-fluid';
 
 	// Give the default page a fluid container.
-	$boldgrid_framework_configs['template']['pages']['default']['container_class'] = 'container';
+	$boldgrid_framework_configs['template']['pages']['default']['container_class'] = 'container-fluid';
 
 	// Set Entry Header to Fluid Width Container.
 	$boldgrid_framework_configs['template']['entry-header'] = 'fluid';
