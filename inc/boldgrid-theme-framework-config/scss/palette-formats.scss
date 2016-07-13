@@ -10,10 +10,6 @@
 	/*-----------------------------------------------
 	## 1
 	-----------------------------------------------*/
-	.home .entry-footer a {
-		color: $palette-primary_1;
-	}
-
 	/* Nav Toggle */
 	.navbar-default .navbar-toggle {
 		border-color: $palette-primary_1;
@@ -349,21 +345,26 @@
 		background: linear-gradient(to bottom,  $palette-primary_3 0%,$palette-primary_2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$palette-primary_3', endColorstr='$palette-primary_2',GradientType=0 ); /* IE6-9 */
 	}
-	&.home .entry-footer {
-		background: $palette-primary_2;
-	}
-	&.home .entry-footer a {
-		background: $palette-primary_2;
-		color: $text-contrast-palette-primary_3;
-	}
-	&.blog .entry-footer a {
-		background: $palette-primary_5;
-		color: $palette-primary_4;
+	&.home {
+		.entry-footer {
+			background: $palette-primary_2;
+			a {
+				background: $palette-primary_2;
+				color: $text-contrast-palette-primary_3;
+			}
+		}
 	}
 	&.mce-content-body {
 		background: $palette-primary_5 !important;
 		color: $text-contrast-palette-primary_5;
 	}
+	&.page-template-default {
+		.site-content {
+			background: $palette-primary_5;
+			color: $text-contrast-palette-primary_5;
+		}
+	}
+	&.single,
 	&.blog {
 		.site-content,
 		.entry-footer,
@@ -371,9 +372,13 @@
 				background: $palette-primary_5;
 				color: $text-contrast-palette-primary_5;
 		}
-	}
-	&.blog .entry-title {
-		background: $palette-primary_5;
-		color: $text-contrast-palette-primary_5 !important;
+		.entry-footer a {
+			background: $palette-primary_5;
+			color: $palette-primary_4;
+		}
+		.entry-title {
+			background: $palette-primary_5;
+			color: $text-contrast-palette-primary_5 !important;
+		}
 	}
 }
