@@ -28,6 +28,18 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = '3';
 
+	// Give page_home.php a fluid container.
+	$boldgrid_framework_configs['template']['pages']['page_home.php']['container_class'] = 'container-fluid';
+
+	// Give the default page a fluid container.
+	$boldgrid_framework_configs['template']['pages']['default']['container_class'] = 'container';
+
+	// Set Entry Header to Fluid Width Container.
+	$boldgrid_framework_configs['template']['entry-header'] = 'fluid';
+
+	// Set Entry Footer to Fluid Width Container.
+	$boldgrid_framework_configs['template']['entry-footer'] = 'fluid';
+
 	// Assign Locations for Generic Footer.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
 		'1' => array( '[widget]boldgrid-widget-3' ),
@@ -37,12 +49,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// This theme doesn't have a Call To Action.
 	$boldgrid_framework_configs['template']['call-to-action'] = 'home-only';
-
-	// Set Entry Header to Fluid Width Container.
-	$boldgrid_framework_configs['template']['entry-header'] = 'fluid';
-
-	// Set Entry Footer to Fluid Width Container.
-	$boldgrid_framework_configs['template']['entry-footer'] = 'fluid';
 
 	/**
 	 * Customizer Configs
