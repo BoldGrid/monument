@@ -195,10 +195,6 @@ input[type="submit"]:focus,
 #footer-widget-area {
 	text-align: left;
 }
-#menu-social li a,
-.footer-center-menu {
-	text-align: right;
-}
 
 /* sm */
 @media (min-width: 768px) {
@@ -223,8 +219,7 @@ input[type="submit"]:focus,
 	.site-footer
 	.site-footer p,
 	.site-info,
-	.attribution,
-	.footer-center-items {
+	.attribution {
 		text-align: right;
 	}
 	.dropdown-menu > li > a {
@@ -423,7 +418,6 @@ hr {
 ## Other Menus
 -----------------------------------------------*/
 #secondary-menu a,
-#menu-social a,
 #tertiary-menu a {
 	padding: 0 8px;
 }
@@ -442,42 +436,12 @@ hr {
 /*-----------------------------------------------
 ## Social Menus
 -----------------------------------------------*/
-#menu-social-media > li > a,
-li.menu-social > a {
-	padding: 0 8px;
-}
 .menu-social {
 	clear: both;
-	padding: 0;
+	padding: 1em 0;
 }
-.menu-social ul {
-	padding-left: 0;
-}
-li.menu-social {
-	display: inline;
-	list-style: none;
-	padding-right: 10px;
-}
-#menu-social ul {
-	padding-bottom: 20px;
-	padding-left: 0;
-}
-#menu-social ul li {
-	display: inline-block;
-	position: relative;
-}
-#menu-social li a {
-	display: inline-block;
-}
-
-/* sm */
-@media (min-width: 768px) {
-	.menu-social {
-		margin-top: 0;
-	}
-	#menu-social-media {
-		margin-left: 6px;
-	}
+.menu-social li {
+	padding: 0 1em;
 }
 
 /*------------------------------------------------------------------------
