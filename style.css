@@ -421,10 +421,6 @@ hr {
 #tertiary-menu a {
 	padding: 0 8px;
 }
-#tertiary-menu {
-	margin-left: -15px;
-	margin-right: -15px;
-}
 #secondary-menu,
 #tertiary-menu {
 	background: none;
