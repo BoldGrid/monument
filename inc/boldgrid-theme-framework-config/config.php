@@ -289,3 +289,8 @@ function boldgrid_container_wrap_bottom() {
 	<?php
 }
 add_action( 'boldgrid_footer_before', 'boldgrid_container_wrap_bottom', 30 );
+
+function boldgrid_tertiary_menu() {
+	do_action( 'boldgrid_menu_tertiary' );
+}
+add_action( 'after_entry_title', 'boldgrid_tertiary_menu' );
