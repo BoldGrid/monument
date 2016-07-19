@@ -38,10 +38,10 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-content'] = 'container-fluid';
 
 	// Give page_home.php a fluid container.
-	$boldgrid_framework_configs['template']['pages']['page_home.php']['header'] = 'container-fluid';
+	$boldgrid_framework_configs['template']['pages']['global']['header'] = 'container-fluid';
 
 	// Give page_home.php a fluid container.
-	$boldgrid_framework_configs['template']['pages']['page_home.php']['footer'] = 'container-fluid';
+	$boldgrid_framework_configs['template']['pages']['global']['footer'] = 'container-fluid';
 
 	// Give default page a fluid container.
 	$boldgrid_framework_configs['template']['pages']['default']['entry-header'] = 'container-fluid';
@@ -51,12 +51,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Give default page a fluid container.
 	$boldgrid_framework_configs['template']['pages']['default']['entry-content'] = 'container-fluid';
-
-	// Give default page a fluid container.
-	$boldgrid_framework_configs['template']['pages']['default']['header'] = 'container-fluid';
-
-	// Give default page a fluid container.
-	$boldgrid_framework_configs['template']['pages']['default']['footer'] = 'container-fluid';
 
 	// Assign Locations for Generic Footer.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
