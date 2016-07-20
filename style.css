@@ -216,8 +216,7 @@ input[type="submit"]:focus,
 	.title-main,
 	.mod-alpha h2,
 	.mod-alpha p,
-	.site-footer
-	.site-footer p,
+	.site-footer,
 	.site-info,
 	.attribution {
 		text-align: right;
