@@ -25,6 +25,9 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Select the footer template to use.
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
+	// Give blog pages a fluid container.
+	$boldgrid_framework_configs['template']['pages']['blog'] = 'container-fluid';
+
 	// Give page_home.php a fluid container.
 	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-header'] = 'container-fluid';
 
