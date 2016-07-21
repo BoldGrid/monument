@@ -226,7 +226,7 @@ function boldgrid_container_wrap_top() {
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3">
-			<div class="sidebar">
+			<div class="sidebar-nav">
 	<?php
 }
 add_action( 'boldgrid_header_before', 'boldgrid_container_wrap_top', 30 );
