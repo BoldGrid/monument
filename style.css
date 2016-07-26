@@ -91,9 +91,6 @@ body.page-template-home .site-content {
 .page-template-page_home .entry-content {
 	margin: 0;
 }
-img {
-	width: 100%;
-}
 h1, h2, h3, h4, h5, h6 {
 	margin: 1em 0;
 }
@@ -530,10 +527,9 @@ blockquote p,
 }
 
 /* md */
-@media (min-width: 992px) {
-	.mod-beta h2 {
-		width: 30%;
-	}
+@media (min-width: 992px) {FOR BEGINNERS AND BUSINESS OWNERS
+THE EASIEST WAY TO WORDPRESS
+
 	.mod-beta-2 img {
 		padding: 0 25px;
 	}
