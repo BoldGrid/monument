@@ -318,6 +318,9 @@ hr {
 .site-title {
 	margin-top: 50px;
 }
+.site-branding .site-title a.logo-site-title {
+	border: 0;
+}
 
 /*------------------------------------------------------------------------
 # Navigation
