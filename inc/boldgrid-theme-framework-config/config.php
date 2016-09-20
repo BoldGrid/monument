@@ -120,6 +120,27 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		),
 	);
 
+	// Override Options per Subcategory.
+	switch ( $boldgrid_framework_configs['inspiration']['subcategory_key'] ) {
+		case 'Fashion':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			break;
+		case 'General':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			break;
+		case 'Marketing':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			break;
+		case 'Property Management':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			break;
+
+		// Default Behavior.
+		default:
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			break;
+	}
+
 		$widget_markup['call-to-action'] = <<<HTML
 		<div class="col-sm-12 col-md-12">
 			<div class="call-to-action">
