@@ -56,8 +56,8 @@ body.page-template-home .site-content {
 ## Positioning
 -----------------------------------------------*/
 .site-content {
-	padding: 25px;
 	margin-top: -16px;
+	padding: 25px;
 }
 .single .site-content,
 .archive .site-content,
@@ -91,7 +91,12 @@ body.page-template-home .site-content {
 .page-template-page_home .entry-content {
 	margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 1em 0;
 }
 p {
@@ -101,8 +106,8 @@ p {
 /* sm */
 @media (min-width: 768px) {
 	.site-content {
-		padding: 25px;
 		margin-top: 125px;
+		padding: 25px;
 	}
 }
 
@@ -221,7 +226,6 @@ input[type="submit"]:focus,
 	.dropdown-menu > li > a {
 		white-space: normal;
 	}
-
 }
 
 /*-----------------------------------------------
@@ -231,8 +235,8 @@ input[type="submit"]:focus,
 	display: none;
 }
 .page-template-default .entry-title {
-	margin-bottom: 0;
 	margin-top: 0;
+	margin-bottom: 0;
 	padding-bottom: 15px;
 }
 .title-main {
@@ -243,8 +247,8 @@ input[type="submit"]:focus,
 /* sm */
 @media (min-width: 768px) {
 	.page-template-default .entry-title {
-		margin-bottom: 30px;
 		margin-top: -110px;
+		margin-bottom: 30px;
 		padding-bottom: 15px;
 	}
 }
@@ -308,8 +312,8 @@ input[type="submit"],
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	border: 0;
 	height: 1px;
+	border: 0;
 }
 
 /*------------------------------------------------------------------------
@@ -336,15 +340,15 @@ hr {
 
 /* Nav Reset */
 .navbar {
-	background-color: none;
-	border: none;
 	min-height: 0;
+	border: none;
 	border-radius: 0;
+	background-color: none;
 }
 .navbar-default {
-	background: none;
-	margin-bottom: 20px;
 	margin-top: 50px;
+	margin-bottom: 20px;
+	background: none;
 }
 .navbar-default .navbar-nav {
 	margin-left: -15px;
@@ -354,7 +358,7 @@ hr {
 .navbar-default .navbar-nav > li > a {
 	display: inline-block;
 	padding: 10px;
-	transition: all 0.5s ease;
+	transition: all .5s ease;
 }
 .navbar-default .navbar-nav > li:first-child > a {
 	margin-left: 0;
@@ -371,9 +375,9 @@ hr {
 
 /* Vertical Navigation */
 .sidebar-nav {
-	margin-left: -15px;
-	margin-right: -15px;
 	position: relative;
+	margin-right: -15px;
+	margin-left: -15px;
 }
 
 /* sm */
@@ -396,18 +400,18 @@ hr {
 		float: none;
 	}
 	.dropdown-menu {
-		float: none;
-		left: 100%;
 		position: static;
 		top: 0;
+		left: 100%;
+		float: none;
 	}
 	.sidebar-nav {
-		height: 100%;
+		position: fixed;
+		z-index: 1;
 		overflow: auto;
 		padding-top: 25px;
-		position: fixed;
 		width: 25%;
-		z-index: 1;
+		height: 100%;
 	}
 }
 
@@ -422,7 +426,8 @@ hr {
 #tertiary-menu {
 	background: none;
 }
-.footer-center-items li::after, .boldgrid-framework-menu li::after {
+.footer-center-items li::after,
+.boldgrid-framework-menu li::after {
 	content: "";
 }
 
@@ -450,16 +455,16 @@ hr {
 	margin-top: -45px;
 }
 .mod-icon-circle i {
-	border-radius: 50%;
 	padding: 15px;
+	border-radius: 50%;
 }
 .mod-icon-circle .fa-lightbulb-o {
 	padding: 15px 20px;
 }
 blockquote,
 .mod-blockquote {
-	padding-bottom: 0;
 	padding-top: 0;
+	padding-bottom: 0;
 }
 blockquote p,
 .mod-blockquote p {
@@ -470,15 +475,15 @@ blockquote p,
 ## Alpha
 -----------------------------------------------*/
 .background-alpha {
-	margin-left: -15px;
 	margin-right: -15px;
+	margin-left: -15px;
 }
 .mod-alpha {
 	/* Flex */
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 
+	justify-content: center;
 }
 .mod-alpha p {
 	padding-left: 0;
@@ -506,8 +511,8 @@ blockquote p,
 ## Beta
 -----------------------------------------------*/
 .background-beta {
-	margin-left: -15px;
 	margin-right: -15px;
+	margin-left: -15px;
 }
 .mod-beta {
 	margin-bottom: 50px;
@@ -523,13 +528,14 @@ blockquote p,
 	padding-bottom: 25px;
 }
 .mod-beta-2 img {
-	height: auto;
 	width: 100%;
+	height: auto;
 }
 
 /* md */
-@media (min-width: 992px) {FOR BEGINNERS AND BUSINESS OWNERS
-THE EASIEST WAY TO WORDPRESS
+@media (min-width: 992px) {
+	for beginners and business owners
+	the easiest way to wordpress
 
 	.mod-beta-2 img {
 		padding: 0 25px;
@@ -540,16 +546,16 @@ THE EASIEST WAY TO WORDPRESS
 ## Gamma
 -----------------------------------------------*/
 .background-gamma {
-	margin-left: -15px;
 	margin-right: -15px;
+	margin-left: -15px;
 }
 
 /*-----------------------------------------------
 ## Delta
 -----------------------------------------------*/
 .background-delta {
-	margin-left: -15px;
 	margin-right: -15px;
+	margin-left: -15px;
 	padding: 15px;
 }
 .mod-delta p {
@@ -559,37 +565,38 @@ THE EASIEST WAY TO WORDPRESS
 /* Diamond Shape */
 .mod-delta-1,
 .mod-delta-1 div {
-	height: 200px;
-	margin: 0 auto;
 	overflow: hidden;
+	margin: 0 auto;
 	width: 200px;
+	height: 200px;
 	transform-origin: 50% 50%;
 }
-.mod-delta-1 { /* IE 9 */ /* Chrome, Safari, Opera */
+.mod-delta-1 {
+	/* IE 9 */ /* Chrome, Safari, Opera */
 	transform: rotate(45deg) translateY(10px);
 }
 .mod-delta-1 .mod-delta-2 {
-	height: 355px;
 	width: 355px; /* IE 9 */ /* Chrome, Safari, Opera */
+	height: 355px;
 	transform: rotate(-45deg) translateY(-74px);
 }
 .mod-delta-1 .mod-delta-2 img {
-	height: auto;
 	width: 80%;
+	height: auto;
 }
 .mod-delta-bg {
-	height: 200px;
 	margin: 80px auto;
 	padding-left: 10px;
 	width: 200px;
+	height: 200px;
 }
 
 @media (min-width: 992px) {
 	/* md */
 	.mod-delta-1,
 	.mod-delta-1 div {
-		height: 190px;
 		width: 190px;
+		height: 190px;
 	}
 }
 
@@ -603,16 +610,16 @@ THE EASIEST WAY TO WORDPRESS
 }
 /* Search Results */
 .search .jumbotron {
-	text-align: center;
 	background: none;
+	text-align: center;
 }
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
 .widget-area {
 	margin-top: 25px;
-	list-style: none;
 	padding: 25px;
+	list-style: none;
 }
 .widget {
 	clear: both;
@@ -621,8 +628,8 @@ THE EASIEST WAY TO WORDPRESS
 .header-widgets-2,
 .header-widgets-3,
 .header-widgets-4 {
-	clear: both;
 	float: left;
+	clear: both;
 	width: 100%;
 }
 
