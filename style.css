@@ -339,8 +339,6 @@ hr {
 	background-color: none;
 	border: none;
 	min-height: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
 	border-radius: 0;
 }
 .navbar-default {
@@ -567,16 +565,12 @@ THE EASIEST WAY TO WORDPRESS
 	width: 200px;
 	transform-origin: 50% 50%;
 }
-.mod-delta-1 {
-	-ms-transform: rotate(45deg) translateY(10px); /* IE 9 */
-	-webkit-transform: rotate(45deg) translateY(10px); /* Chrome, Safari, Opera */
+.mod-delta-1 { /* IE 9 */ /* Chrome, Safari, Opera */
 	transform: rotate(45deg) translateY(10px);
 }
 .mod-delta-1 .mod-delta-2 {
 	height: 355px;
-	width: 355px;
-	-ms-transform: rotate(-45deg) translateY(-74px); /* IE 9 */
-	-webkit-transform: rotate(-45deg) translateY(-74px); /* Chrome, Safari, Opera */
+	width: 355px; /* IE 9 */ /* Chrome, Safari, Opera */
 	transform: rotate(-45deg) translateY(-74px);
 }
 .mod-delta-1 .mod-delta-2 img {
