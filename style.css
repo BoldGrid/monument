@@ -290,6 +290,12 @@ input[type="submit"],
 .call-to-action .p-button-primary {
 	margin-top: 0;
 }
+.flexbox .call-to-action .p-button-primary {
+	justify-content: center;
+}
+.no-flexbox .call-to-action .p-button-primary .button-primary {
+	margin: 15px auto 0;
+}
 .call-to-action h1 {
 	margin-bottom: 25px;
 }
