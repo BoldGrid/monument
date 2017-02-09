@@ -701,6 +701,7 @@ blockquote p,
 ------------------------------------------------------------------------*/
 .site-footer {
 	padding: 20px 0;
+	margin-left: 25%;
 }
 .site-info {
 	margin-bottom: -10px;
@@ -720,4 +721,9 @@ blockquote p,
 .palette-primary.home .entry-footer {
 	margin-left: -15px;
 	width: calc(100% + 30px);
+}
+@media (max-width: 992px) {
+	.site-footer {
+		margin: 0;
+	}
 }
