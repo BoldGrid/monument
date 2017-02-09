@@ -708,17 +708,10 @@ blockquote p,
 .attribution {
 	padding-bottom: 30px;
 }
-.entry-footer .container {
-	width: 100%;
-}
 .disabled-footer .content-area {
 	margin-bottom: 0;
 }
-
-/* md */
-@media (min-width: 992px) {
-	.site-footer {
-		float: right;
-		width: 83%;
-	}
+.palette-primary.home .entry-footer {
+	margin-left: -15px;
+	width: calc(100% + 30px);
 }

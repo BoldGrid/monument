@@ -29,15 +29,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['template']['pages']['blog'] = 'container-fluid';
 
 	// Give page_home.php a fluid container.
-	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-header'] = 'container-fluid';
-
-	// Give page_home.php a fluid container.
-	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-footer'] = 'container-fluid';
-
-	// Give page_home.php a fluid container.
-	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-content'] = 'container-fluid';
-
-	// Give page_home.php a fluid container.
 	$boldgrid_framework_configs['template']['pages']['global']['header'] = 'container-fluid';
 
 	// Give page_home.php a fluid container.
@@ -233,9 +224,6 @@ add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config'
 function bgtfw_container_overrides( $boldgrid_framework_configs ) {
 
 	// Give page_home.php a fluid container.
-	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-content'] = 'container-fluid';
-
-	// Give page_home.php a fluid container.
 	$boldgrid_framework_configs['template']['pages']['default']['entry-content'] = 'container-fluid';
 
 	return $boldgrid_framework_configs;
@@ -265,7 +253,7 @@ add_filter( 'kirki/fields', 'boldgrid_filter_logo_controls' );
  */
 function boldgrid_container_wrap_top() {
 	?>
-<div class="container-fluid">
+<div class="bgtfw">
 	<div class="row">
 		<div class="col-md-3">
 			<div class="sidebar-nav">
