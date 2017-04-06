@@ -44,7 +44,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*------------------------------------------------------------------------
 # Base Styles
 ------------------------------------------------------------------------*/
-
 body.page-template-home .site-content {
 	background-color: transparent;
 }
@@ -161,8 +160,6 @@ input[type="submit"]:focus,
 .button-secondary:focus,
 #commentsubmit:hover,
 #commentsubmit:focus,
-.woocommerce p.buttons a.button:hover,
-.woocommerce p.buttons a.button:focus,
 .site-footer a:hover,
 .site-footer a:focus {
 	text-decoration: none;
@@ -239,17 +236,32 @@ input[type="submit"]:focus,
 	margin-bottom: 0;
 	padding-bottom: 15px;
 }
+.page-template-default .entry-title a {
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
 .title-main {
+	border-bottom: 1px solid #333;
+	color: #333;
+	border-top: 1px solid #333;
 	margin: 0;
-	padding: 20px 0;
+	padding: 20px 0;	
 }
 
 /* sm */
 @media (min-width: 768px) {
 	.page-template-default .entry-title {
+		color: #fff;
 		margin-top: -110px;
 		margin-bottom: 30px;
 		padding-bottom: 15px;
+	}
+	.entry-title a,
+	.entry-title a:hover,
+	.entry-title a:focus {
+		border-bottom: none;
+		text-decoration: none;
+		color: #fff;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 	}
 }
 
@@ -297,7 +309,9 @@ input[type="submit"],
 	margin: 15px auto 0;
 }
 .call-to-action h1 {
+	color: #fff;
 	margin-bottom: 25px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* sm */
@@ -320,6 +334,9 @@ input[type="submit"],
 hr {
 	height: 1px;
 	border: 0;
+}
+.gridblock .heading-alt {
+	color: #738599;
 }
 
 /*------------------------------------------------------------------------
@@ -384,6 +401,19 @@ hr {
 	position: relative;
 	margin-right: -15px;
 	margin-left: -15px;
+}
+
+/* Nav Toggle */
+.navbar-default .navbar-toggle {
+	border-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+	background-color: #25374a;
 }
 
 /* sm */
@@ -451,10 +481,12 @@ hr {
 /*------------------------------------------------------------------------
 # Modules
 ------------------------------------------------------------------------*/
+
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
 .mod-divider {
+	border-top: 1px solid #333;
 	margin: 4em 0;
 }
 .mod-divider p {
@@ -462,10 +494,14 @@ hr {
 }
 .mod-icon-circle i {
 	padding: 15px;
+	border: 2px solid #333;
 	border-radius: 50%;
 }
 .mod-icon-circle .fa-lightbulb-o {
 	padding: 15px 20px;
+}
+.mod-blockquote {
+	border-left: 7px solid #333;
 }
 blockquote,
 .mod-blockquote {
@@ -540,9 +576,6 @@ blockquote p,
 
 /* md */
 @media (min-width: 992px) {
-	for beginners and business owners
-	the easiest way to wordpress
-
 	.mod-beta-2 img {
 		padding: 0 25px;
 	}
@@ -597,8 +630,8 @@ blockquote p,
 	height: 200px;
 }
 
+/* md */
 @media (min-width: 992px) {
-	/* md */
 	.mod-delta-1,
 	.mod-delta-1 div {
 		width: 190px;
@@ -609,16 +642,17 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Pages
 ------------------------------------------------------------------------*/
-
 /* 404 page */
 .error404 .jumbotron {
 	background-color: transparent;
 }
+
 /* Search Results */
 .search .jumbotron {
 	background: none;
 	text-align: center;
 }
+
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
@@ -626,6 +660,7 @@ blockquote p,
 	margin-top: 25px;
 	padding: 25px;
 	list-style: none;
+	border: 1px solid #ccc;
 }
 .widget {
 	clear: both;
@@ -647,7 +682,14 @@ blockquote p,
 
 /* Buttons */
 .form-submit .submit {
+	background: #ccc;
+	color: #337ab7;
 	margin-bottom: 10px;
+}
+.form-submit .submit:hover,
+.form-submit .submit:focus {
+	color: #ccc;
+	background: #337ab7;
 }
 #header-widget-area {
 	margin: 0 10px;
@@ -682,12 +724,6 @@ blockquote p,
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-.woocommerce .page-title {
-	margin: 0;
-}
-.woocommerce p.buttons a.button:hover {
-	background-image: none;
-}
 .woocommerce #content div.product div.images,
 .woocommerce div.product div.images,
 .woocommerce-page #content div.product div.images,
@@ -722,6 +758,7 @@ blockquote p,
 	margin-left: -15px;
 	width: calc(100% + 30px);
 }
+
 @media (max-width: 992px) {
 	.site-footer {
 		margin: 0;
