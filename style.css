@@ -403,19 +403,6 @@ hr {
 	margin-left: -15px;
 }
 
-/* Nav Toggle */
-.navbar-default .navbar-toggle {
-	border-color: #ddd;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-	background-color: #ddd;
-}
-.navbar-default .navbar-toggle:hover .icon-bar,
-.navbar-default .navbar-toggle:focus .icon-bar {
-	background-color: #25374a;
-}
-
 /* sm */
 @media (min-width: 768px) {
 	/* Dropdown Child Default */
@@ -472,6 +459,8 @@ hr {
 -----------------------------------------------*/
 .menu-social {
 	clear: both;
+}
+ul#menu-social-items {
 	padding: 1em 0;
 }
 .menu-social li {
