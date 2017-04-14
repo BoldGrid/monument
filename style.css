@@ -338,6 +338,9 @@ hr {
 .gridblock .heading-alt {
 	color: #738599;
 }
+.panel {
+	box-shadow: none;
+}
 
 /*------------------------------------------------------------------------
 # Header
