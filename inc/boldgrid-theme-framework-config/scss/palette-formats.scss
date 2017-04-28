@@ -193,8 +193,12 @@
 	select,
 	textarea,
 	.media-heading,
-	.comments-area .comment-content p {
+	.comments-area .comment-content p,
+	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary_5;
+	}
+	#reviews #comments ol.commentlist li .comment-text {
+		border: 1px solid $text-contrast-palette-primary_5;
 	}
 	.entry-title a,
 	.entry-title a:hover,
