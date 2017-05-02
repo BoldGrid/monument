@@ -191,7 +191,8 @@
 	button,
 	.media-heading,
 	.comments-area .comment-content p,
-	#reviews #comments ol.commentlist li .meta {
+	#reviews #comments ol.commentlist li .meta,
+	.sidebar .widget-title {
 		color: $text-contrast-palette-primary_5;
 	}
 	#reviews #comments ol.commentlist li .comment-text {
