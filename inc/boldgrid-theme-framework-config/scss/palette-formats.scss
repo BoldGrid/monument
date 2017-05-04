@@ -311,4 +311,14 @@
 			color: $text-contrast-palette-primary_5 !important;
 		}
 	}
+	
+	/*-----------------------------------------------
+	## WooCommerce
+	-----------------------------------------------*/
+	&.woocommerce div.product .stock.out-of-stock {
+		color: $palette-primary_4;
+	}
+	&.woocommerce div.product .stock {
+		color: $text-contrast-palette-primary_5;
+	}
 }
