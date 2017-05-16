@@ -244,7 +244,7 @@ input[type="submit"]:focus,
 	color: #333;
 	border-top: 1px solid #333;
 	margin: 0;
-	padding: 20px 0;	
+	padding: 20px 0;
 }
 
 /* sm */
@@ -370,9 +370,6 @@ select {
 ## Main Menu
 -----------------------------------------------*/
 /* Typography */
-#site-navigation {
-	z-index: 1;
-}
 
 /* Nav Reset */
 .navbar {
@@ -392,7 +389,6 @@ select {
 
 /* Links */
 .navbar-default .navbar-nav > li > a {
-	display: inline-block;
 	padding: 10px;
 	transition: all .5s ease;
 }
@@ -432,22 +428,15 @@ select {
 
 /* md */
 @media (min-width: 992px) {
-	.navbar-nav > li {
-		float: none;
-	}
-	.dropdown-menu {
-		position: static;
-		top: 0;
-		left: 100%;
-		float: none;
-	}
 	.sidebar-nav {
 		position: fixed;
 		z-index: 1;
-		overflow: auto;
 		padding-top: 25px;
 		width: 25%;
 		height: 100%;
+	}
+	.navbar-nav > li {
+		width: 100%;
 	}
 }
 
