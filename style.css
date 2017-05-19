@@ -392,38 +392,12 @@ select {
 	padding: 10px;
 	transition: all .5s ease;
 }
-.navbar-default .navbar-nav > li:first-child > a {
-	margin-left: 0;
-}
-
-/* Hover & Active */
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	background: none;
-}
 
 /* Vertical Navigation */
 .sidebar-nav {
 	position: relative;
 	margin-right: -15px;
 	margin-left: -15px;
-}
-
-/* sm */
-@media (min-width: 768px) {
-	/* Dropdown Child Default */
-	.navbar-default {
-		float: left;
-	}
-	.navbar-nav > li {
-		float: left;
-	}
-	.navbar-nav > li.menu-social {
-		float: none;
-	}
 }
 
 /* md */
