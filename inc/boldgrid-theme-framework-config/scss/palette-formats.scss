@@ -1,6 +1,7 @@
 /*------------------------------------------------------------------------
 # Variables
 ------------------------------------------------------------------------*/
+$rgba_4 : rgba($palette-primary_4, 0.75);
 
 /*------------------------------------------------------------------------
 # Palettes
@@ -147,6 +148,36 @@
 	.navbar-default .navbar-nav > .active > a:focus {
 		background: none;
 		color: $palette-primary_4;
+	}
+
+	/* Gallery Captions */
+	.wc-gallery-captions-showon .gallery-caption, 
+	.wc-gallery-captions-onhover .gallery-caption {
+		background: $rgba_4;
+		color: $text-contrast-palette-primary_4;
+	}
+	.wc-gallery-captions-show .gallery-caption,
+	.wc-gallery-captions-onpopup .gallery-caption  {
+		background: $palette-primary_4;
+		color: $text-contrast-palette-primary_4;
+	}
+	.wc-gallery .gallery-caption {
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $text-contrast-palette-primary_4;
+		}
+	}
+	.mfp-title {
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: #fff !important;
+		}
 	}
 
 	/*-----------------------------------------------
