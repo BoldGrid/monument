@@ -1,8 +1,4 @@
 /*------------------------------------------------------------------------
-# Variables
-------------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
@@ -77,8 +73,6 @@
 	#menu-social a,
 	#menu-social li a,
 	.site-footer p,
-	.site-info,
-	.attribution,
 	mark,
 	ins {
 		background: $palette-primary_3;
@@ -95,7 +89,6 @@
 	.background-gamma {
 		background: $palette-primary_3;
 	}
-	a.comment-reply-link,
 	caption,
 	.widget-title {
 		color: $palette-primary_3;
@@ -198,11 +191,56 @@
 		text-decoration: none;
 	}
 
+	/* sm */
+	@media (min-width: 768px) {
+		.entry-title a,
+		.entry-title a:hover,
+		.entry-title a:focus {
+			border-bottom: none;
+			text-decoration: none;
+			color: #fff;
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+		}
+		.page-template-default .entry-title {
+			color: #fff;
+		}	
+	}
+
 	/*-----------------------------------------------
 	## Misc
 	-----------------------------------------------*/
-	.button-primary,
-	.comment-reply-link {
+	.call-to-action h1 {
+		color: #fff;
+		margin-bottom: 25px;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	}
+	.title-main {
+		border-bottom: 1px solid #333;
+		color: #333;
+		border-top: 1px solid #333;
+	}
+	.mod-blockquote {
+		border-left: 7px solid #333;
+	}
+	.mod-divider {
+		border-top: 1px solid #333;
+	}
+	.mod-icon-circle i {
+		border: 2px solid #333;
+	}
+	.page-template-default .entry-title a {
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	}
+	.gridblock .heading-alt {
+		color: #738599;
+	}
+	input,
+	select {
+		color: #333;
+	}
+
+	/* Buttons */
+	.button-primary {
 		border: 2px solid $palette-primary_1;
 		border-radius: 0;
 		color: $text-contrast-palette-primary_5 !important;
@@ -214,11 +252,7 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='palette-primary_5 ', endColorstr='$palette-primary_1',GradientType=0 ); /* IE6-9 */
 	}
 	.button-primary:hover,
-	.button-primary:focus,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
-	.comment-reply-link:hover,
-	.comment-reply-link:focus {
+	.button-primary:focus {
 		color: $text-contrast-palette-primary_5 !important;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+57,a6a6a6+100 */
 		background: $palette-primary_5; /* Old browsers */
@@ -228,8 +262,7 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$palette-primary_1', endColorstr='$palette-primary_5',GradientType=0 ); /* IE6-9 */
 	}
 	.button-secondary,
-	input[type="submit"],
-	#commentsubmit {
+	input[type="submit"] {
 		border: 2px solid $palette-primary_2;
 		border-radius: 0;
 		color: $text-contrast-palette-primary_2 !important;
@@ -241,9 +274,7 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$palette-primary_2', endColorstr='$palette-primary_3',GradientType=0 ); /* IE6-9 */
 	}
 	.button-secondary:hover,
-	.button-secondary:focus,
-	#commentsubmit:hover,
-	#commentsubmit:focus {
+	.button-secondary:focus {
 		color: $text-contrast-palette-primary_3 !important;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#767b7f+0,535659+48,232426+100 */
 		background: $palette-primary_3; /* Old browsers */
@@ -252,6 +283,8 @@
 		background: linear-gradient(to bottom,  $palette-primary_3 0%,$palette-primary_2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$palette-primary_3', endColorstr='$palette-primary_2',GradientType=0 ); /* IE6-9 */
 	}
+
+	/* Additional Body Classes */
 	&.home {
 		.entry-footer {
 			background: $palette-primary_2;
@@ -296,10 +329,6 @@
 			color: $text-contrast-palette-primary_5 !important;
 		}
 	}
-	
-	/*-----------------------------------------------
-	## WooCommerce
-	-----------------------------------------------*/
 	&.woocommerce.single-product .color2-color {
 		color: $palette-primary_1 !important;
 	}

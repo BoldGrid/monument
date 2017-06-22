@@ -119,10 +119,7 @@ p {
 .page-template-default .entry-title,
 .title-main,
 .button-primary,
-.comment-reply-link,
 .button-secondary,
-input[type="submit"],
-#commentsubmit,
 .mod-beta-2 h3 {
 	font-weight: bold;
 }
@@ -152,14 +149,8 @@ a:focus,
 .button-primary:active,
 .link-secondary:hover,
 .link-secondary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-.comment-reply-link:hover,
-.comment-reply-link:focus,
 .button-secondary:hover,
 .button-secondary:focus,
-#commentsubmit:hover,
-#commentsubmit:focus,
 .site-footer a:hover,
 .site-footer a:focus {
 	text-decoration: none;
@@ -178,8 +169,6 @@ input[type="submit"]:focus,
 .mod-beta-2,
 .mod-delta p,
 .site-footer,
-.site-info,
-.attribution,
 .footer-center-items,
 .xs-center,
 .mod-img,
@@ -215,9 +204,7 @@ input[type="submit"]:focus,
 	.title-main,
 	.mod-alpha h2,
 	.mod-alpha p,
-	.site-footer,
-	.site-info,
-	.attribution {
+	.site-footer {
 		text-align: right;
 	}
 	.dropdown-menu > li > a {
@@ -236,13 +223,7 @@ input[type="submit"]:focus,
 	margin-bottom: 0;
 	padding-bottom: 15px;
 }
-.page-template-default .entry-title a {
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
 .title-main {
-	border-bottom: 1px solid #333;
-	color: #333;
-	border-top: 1px solid #333;
 	margin: 0;
 	padding: 20px 0;
 }
@@ -250,18 +231,9 @@ input[type="submit"]:focus,
 /* sm */
 @media (min-width: 768px) {
 	.page-template-default .entry-title {
-		color: #fff;
 		margin-top: -110px;
 		margin-bottom: 30px;
 		padding-bottom: 15px;
-	}
-	.entry-title a,
-	.entry-title a:hover,
-	.entry-title a:focus {
-		border-bottom: none;
-		text-decoration: none;
-		color: #fff;
-		text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 	}
 }
 
@@ -269,10 +241,7 @@ input[type="submit"]:focus,
 ## Buttons
 -----------------------------------------------*/
 .button-primary,
-.comment-reply-link,
-.button-secondary,
-input[type="submit"],
-#commentsubmit {
+.button-secondary {
 	margin-top: 25px;
 	padding: 10px 40px;
 }
@@ -308,11 +277,6 @@ input[type="submit"],
 .no-flexbox .call-to-action .p-button-primary .button-primary {
 	margin: 15px auto 0;
 }
-.call-to-action h1 {
-	color: #fff;
-	margin-bottom: 25px;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
 
 /* sm */
 @media (min-width: 768px) {
@@ -335,9 +299,6 @@ hr {
 	height: 1px;
 	border: 0;
 }
-.gridblock .heading-alt {
-	color: #738599;
-}
 .panel-default > .panel-heading,
 .panel-footer,
 .panel {
@@ -346,10 +307,6 @@ hr {
 }
 .panel {
 	box-shadow: none;
-}
-input,
-select {
-	color: #333;
 }
 
 /*------------------------------------------------------------------------
@@ -375,8 +332,6 @@ select {
 .navbar {
 	min-height: 0;
 	border: none;
-	border-radius: 0;
-	background-color: none;
 }
 .navbar-default {
 	margin-top: 50px;
@@ -421,10 +376,6 @@ select {
 #tertiary-menu a {
 	padding: 0 8px;
 }
-#secondary-menu,
-#tertiary-menu {
-	background: none;
-}
 .footer-center-items li::after,
 .boldgrid-framework-menu li::after {
 	content: "";
@@ -451,7 +402,6 @@ ul#menu-social-items {
 ## Global
 -----------------------------------------------*/
 .mod-divider {
-	border-top: 1px solid #333;
 	margin: 4em 0;
 }
 .mod-divider p {
@@ -459,14 +409,10 @@ ul#menu-social-items {
 }
 .mod-icon-circle i {
 	padding: 15px;
-	border: 2px solid #333;
 	border-radius: 50%;
 }
 .mod-icon-circle .fa-lightbulb-o {
 	padding: 15px 20px;
-}
-.mod-blockquote {
-	border-left: 7px solid #333;
 }
 blockquote,
 .mod-blockquote {
@@ -621,12 +567,6 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.widget-area {
-	margin-top: 25px;
-	padding: 25px;
-	list-style: none;
-	border: 1px solid #ccc;
-}
 .widget {
 	clear: both;
 }
@@ -637,24 +577,6 @@ blockquote p,
 	float: left;
 	clear: both;
 	width: 100%;
-}
-
-/* Comments */
-.comment-form-comment label {
-	float: left;
-	padding-right: 15px;
-}
-
-/* Buttons */
-.form-submit .submit {
-	background: #ccc;
-	color: #337ab7;
-	margin-bottom: 10px;
-}
-.form-submit .submit:hover,
-.form-submit .submit:focus {
-	color: #ccc;
-	background: #337ab7;
 }
 #header-widget-area {
 	margin: 0 10px;
@@ -708,17 +630,8 @@ blockquote p,
 	padding: 20px 0;
 	margin-left: 25%;
 }
-.site-info {
-	margin-bottom: -10px;
-}
-.footer-center-items {
-	padding-left: 0;
-}
 .footer-center-items li a {
 	padding: 5px;
-}
-.attribution {
-	padding-bottom: 30px;
 }
 .disabled-footer .content-area {
 	margin-bottom: 0;
