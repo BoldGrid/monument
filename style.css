@@ -384,14 +384,12 @@ hr {
 /*-----------------------------------------------
 ## Social Menus
 -----------------------------------------------*/
-.menu-social {
-	clear: both;
+li.menu-social {
+	padding: 1em;
 }
-ul#menu-social-items {
-	padding: 1em 0;
-}
-.menu-social li {
-	padding: 0 1em;
+#secondary-menu li.menu-social,
+#tertiary-menu li.menu-social {
+	line-height: 3em;
 }
 
 /*------------------------------------------------------------------------
