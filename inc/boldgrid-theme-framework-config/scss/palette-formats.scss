@@ -12,7 +12,8 @@
 	}
 	.navbar-default .navbar-toggle .icon-bar,
 	.navbar-default .navbar-toggle:hover,
-	.navbar-default .navbar-toggle:focus {
+	.navbar-default .navbar-toggle:focus,
+  .background-beta, {
 		background: $palette-primary_1;
 	}
 	.navbar-default .navbar-toggle:hover .icon-bar,
@@ -49,8 +50,6 @@
 		border-bottom: 5px solid $palette-primary_1;
 		color: $text-contrast-palette-primary_2;
 	}
-	.background-alpha h2,
-	.background-delta h2,
 	.mod-alpha h2,
 	.mod-alpha p,
 	.mod-delta p, {
@@ -64,7 +63,6 @@
 	/*-----------------------------------------------
 	## 3
 	-----------------------------------------------*/
-	.background-gamma h2,
 	.sidebar-nav,
 	.site-footer,
 	.site-title,
@@ -155,15 +153,12 @@
 		color: $text-contrast-palette-primary_5;
 	}
 	#tertiary-menu a,
-	.background-beta,
 	.mod-divider a {
 		background: $palette-primary_5;
 		color: $text-contrast-palette-primary_5;
 	}
-	.background-beta,
 	.product_title,
-	.single .entry-title a,
-	.background-beta h2 {
+	.single .entry-title a {
 		background: $palette-primary_5;
 		color: $text-contrast-palette-primary_5 !important;
 	}

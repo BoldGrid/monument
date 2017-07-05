@@ -47,9 +47,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 body.page-template-home .site-content {
 	background-color: transparent;
 }
-.full-width {
-	padding: 0;
-}
 
 /*-----------------------------------------------
 ## Positioning
@@ -66,6 +63,9 @@ body.page-template-home .site-content {
 .page-template-page_home .site-content {
 	margin-top: 0;
 	padding: 0 15px;
+}
+.page-template-default .site-content {
+    margin: 125px -15px 0;
 }
 .hentry {
 	margin: 0;
@@ -85,10 +85,10 @@ body.page-template-home .site-content {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 4em 2em 0;
+	margin: 0 -15px;
 }
 .page-template-page_home .entry-content {
-	margin: 0;
+	margin: 0 -15px;
 }
 h1,
 h2,
@@ -635,8 +635,7 @@ blockquote p,
 	margin-bottom: 0;
 }
 .palette-primary.home .entry-footer {
-	margin-left: -15px;
-	width: calc(100% + 30px);
+	margin: 0 -30px;
 }
 
 @media (max-width: 992px) {
