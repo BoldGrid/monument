@@ -39,24 +39,6 @@
 	/*-----------------------------------------------
 	## 2
 	-----------------------------------------------*/
-	.background-alpha,
-	.background-delta,
-	.mod-alpha {
-		background: $palette-primary_2;
-	}
-	.mod-alpha h2 {
-		background: $palette-primary_2;
-		border-bottom: 5px solid $palette-primary_1;
-		color: $text-contrast-palette-primary_2;
-	}
-	.background-alpha h2,
-	.background-delta h2,
-	.mod-alpha h2,
-	.mod-alpha p,
-	.mod-delta p, {
-		background: $palette-primary_2;
-		color: $text-contrast-palette-primary_2;
-	}
 	.link-secondary {
 		color: $palette-primary_2;
 	}
@@ -64,7 +46,6 @@
 	/*-----------------------------------------------
 	## 3
 	-----------------------------------------------*/
-	.background-gamma h2,
 	.sidebar-nav,
 	.site-footer,
 	.site-title,
@@ -84,10 +65,6 @@
 	.site-title a {
 		color: $text-contrast-palette-primary_3;
 		border-bottom: 5px solid $palette-primary_4;
-	}
-	.mod-delta-bg,
-	.background-gamma {
-		background: $palette-primary_3;
 	}
 	caption,
 	.widget-title {
@@ -155,15 +132,12 @@
 		color: $text-contrast-palette-primary_5;
 	}
 	#tertiary-menu a,
-	.background-beta,
 	.mod-divider a {
 		background: $palette-primary_5;
 		color: $text-contrast-palette-primary_5;
 	}
-	.background-beta,
 	.product_title,
-	.single .entry-title a,
-	.background-beta h2 {
+	.single .entry-title a {
 		background: $palette-primary_5;
 		color: $text-contrast-palette-primary_5 !important;
 	}
