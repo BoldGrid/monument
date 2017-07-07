@@ -385,7 +385,7 @@ hr {
 ## Social Menus
 -----------------------------------------------*/
 li.menu-social {
-	padding: 1em;
+	padding: 1em .80em;
 }
 #secondary-menu li.menu-social,
 #tertiary-menu li.menu-social {
