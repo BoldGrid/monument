@@ -91,9 +91,7 @@
 	.widget-title {
 		color: $palette-primary_3;
 	}
-
-	/* sm */
-	@media (min-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 		.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 		.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
@@ -185,9 +183,7 @@
 		border-bottom: 3px solid $text-contrast-palette-primary_5;
 		text-decoration: none;
 	}
-
-	/* sm */
-	@media (min-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		.entry-title a,
 		.entry-title a:hover,
 		.entry-title a:focus {
@@ -279,7 +275,9 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$palette-primary_3', endColorstr='$palette-primary_2',GradientType=0 ); /* IE6-9 */
 	}
 
-	/* Additional Body Classes */
+	/*-----------------------------------------------
+	## Additional Body Classes
+	-----------------------------------------------*/
 	&.home {
 		.entry-footer {
 			background: $palette-primary_2;

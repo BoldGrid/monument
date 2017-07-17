@@ -102,8 +102,8 @@ p {
 	margin-bottom: 15px;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.site-content {
 		margin-top: 125px;
 		padding: 25px;
@@ -184,16 +184,16 @@ a:focus,
 	text-align: left;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.navbar-default .navbar-nav,
 	.navbar-default .navbar-nav .open .dropdown-menu {
 		text-align: left;
 	}
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.xs-center,
 	.mod-img,
 	.mod-img-circle,
@@ -228,8 +228,8 @@ a:focus,
 	padding: 20px 0;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.page-template-default .entry-title {
 		margin-top: -110px;
 		margin-bottom: 30px;
@@ -278,8 +278,8 @@ a:focus,
 	margin: 15px auto 0;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.button-primary,
 	.button-secondary,
 	.call-to-action .p-button-primary {
@@ -326,9 +326,6 @@ hr {
 /*-----------------------------------------------
 ## Main Menu
 -----------------------------------------------*/
-/* Typography */
-
-/* Nav Reset */
 .navbar {
 	min-height: 0;
 	border: none;
@@ -341,8 +338,6 @@ hr {
 .navbar-default .navbar-nav {
 	margin-left: -15px;
 }
-
-/* Links */
 .navbar-default .navbar-nav > li > a {
 	padding: 10px;
 	transition: all .5s ease;
@@ -355,8 +350,8 @@ hr {
 	margin-left: -15px;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.sidebar-nav {
 		position: fixed;
 		z-index: 1;
@@ -440,7 +435,7 @@ blockquote p,
 	padding-left: 0;
 }
 
-/* xs */
+/* Extra small devices (phones, less than 768px) */
 .mod-alpha {
 	padding: 15px;
 }
@@ -448,8 +443,8 @@ blockquote p,
 	padding-bottom: 15px;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.mod-alpha h2 {
 		padding-bottom: 40px;
 	}
@@ -483,8 +478,8 @@ blockquote p,
 	height: auto;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.mod-beta-2 img {
 		padding: 0 25px;
 	}
@@ -539,8 +534,8 @@ blockquote p,
 	height: 200px;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.mod-delta-1,
 	.mod-delta-1 div {
 		width: 190px;
@@ -580,7 +575,7 @@ blockquote p,
 	margin: 0 10px;
 }
 
-/* xs */
+/* Extra small devices (phones, less than 768px) */
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
@@ -590,8 +585,8 @@ blockquote p,
 	width: 17%;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.table > thead > tr > th,
 	.table > tbody > tr > th,
 	.table > tfoot > tr > th,
@@ -616,7 +611,6 @@ blockquote p,
 	float: left;
 	width: 42%;
 }
-
 .woocommerce-account p.order-again .btn.button-primary {
 	padding: 12px 24px;
 }
@@ -638,7 +632,8 @@ blockquote p,
 	margin: 0 -30px;
 }
 
-@media (max-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.site-footer {
 		margin: 0;
 	}
