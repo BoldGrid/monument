@@ -44,7 +44,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*------------------------------------------------------------------------
 # Base Styles
 ------------------------------------------------------------------------*/
-body.page-template-home .site-content {
+.page-template-page_home .site-content {
 	background-color: transparent;
 }
 
@@ -76,7 +76,7 @@ body.page-template-home .site-content {
 .post-title-hidden .site-content {
 	margin-top: -15px;
 }
-.home.post-title-hidden .site-content {
+.page-template-page_home.post-title-hidden .site-content {
 	margin-top: 0;
 }
 .container-fluid > .container {
@@ -628,7 +628,7 @@ blockquote p,
 .disabled-footer .content-area {
 	margin-bottom: 0;
 }
-.palette-primary.home .entry-footer {
+.page-template-page_home .entry-footer {
 	margin: 0 -30px;
 }
 

@@ -278,7 +278,7 @@
 	/*-----------------------------------------------
 	## Additional Body Classes
 	-----------------------------------------------*/
-	&.home {
+	&.page-template-page_home {
 		.entry-footer {
 			background: $palette-primary_2;
 			a {
@@ -287,15 +287,15 @@
 			}
 		}
 	}
-	&.mce-content-body {
-		background: $palette-primary_5 !important;
-		color: $text-contrast-palette-primary_5;
-	}
 	&.page-template-default {
 		.site-content {
 			background: $palette-primary_5;
 			color: $text-contrast-palette-primary_5;
 		}
+	}
+	&.mce-content-body {
+		background: $palette-primary_5 !important;
+		color: $text-contrast-palette-primary_5;
 	}
 	&.error404 {
 		.site-content {
