@@ -629,9 +629,9 @@ blockquote p,
 	margin-bottom: 0;
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
 	.site-footer {
-		margin: 0;
+		margin-left: 0
 	}
 }
