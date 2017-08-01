@@ -628,9 +628,6 @@ blockquote p,
 .disabled-footer .content-area {
 	margin-bottom: 0;
 }
-.page-template-page_home .entry-footer {
-	margin: 0 -30px;
-}
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

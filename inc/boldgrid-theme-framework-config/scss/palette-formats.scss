@@ -278,14 +278,8 @@
 	/*-----------------------------------------------
 	## Additional Body Classes
 	-----------------------------------------------*/
-	&.page-template-page_home {
-		.entry-footer {
-			background: $palette-primary_2;
-			a {
-				background: $palette-primary_2;
-				color: $text-contrast-palette-primary_3;
-			}
-		}
+	&.page-template-default .entry-footer {
+		background: $palette-primary_3 !important;
 	}
 	&.page-template-default {
 		.site-content {
@@ -307,15 +301,9 @@
 	&.single,
 	&.archive,
 	&.blog {
-		.site-content,
-		.entry-footer,
-		.entry-footer span {
+		.site-content {
 			background: $palette-primary_5;
 			color: $text-contrast-palette-primary_5;
-		}
-		.entry-footer a {
-			background: $palette-primary_5;
-			color: $palette-primary_4;
 		}
 		.entry-title a {
 			background: $palette-primary_5;
