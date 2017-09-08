@@ -65,10 +65,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	padding: 0 15px;
 }
 .page-template-default .site-content {
-    margin: 125px -15px 0;
-}
-.hentry {
-	margin: 0;
+	margin: 125px -15px 0;
 }
 .error404 .site-content {
 	margin-top: -15px;
@@ -573,6 +570,9 @@ blockquote p,
 }
 #header-widget-area {
 	margin: 0 10px;
+}
+.post {
+	margin: 0 auto 50px;
 }
 
 /* Extra small devices (phones, less than 768px) */
