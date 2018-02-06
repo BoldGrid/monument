@@ -6,14 +6,18 @@
 	/*-----------------------------------------------
 	## 1
 	-----------------------------------------------*/
+	.background-beta {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+	
 	/* Nav Toggle */
 	.navbar-default .navbar-toggle {
 		border-color: $palette-primary_1;
 	}
 	.navbar-default .navbar-toggle .icon-bar,
 	.navbar-default .navbar-toggle:hover,
-	.navbar-default .navbar-toggle:focus,
-	.background-beta {
+	.navbar-default .navbar-toggle:focus {
 		background: $palette-primary_1;
 	}
 	.navbar-default .navbar-toggle:hover .icon-bar,
