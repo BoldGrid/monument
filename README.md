@@ -6,7 +6,7 @@
 - License: GNU General Public License v2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-BoldGrid Theme best suited for Photography, Fashion, Fitness, Property Management, Music, and Restaurant sites.
+BoldGrid Theme best suited for Photography, Fashion, Fitness, Music, and Restaurant sites.
 
 ## Information & Changelog
 [BoldGrid.com - Monument](https://www.boldgrid.com/themes/monument/)
